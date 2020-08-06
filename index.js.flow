@@ -11,7 +11,7 @@ declare export function heightPercentageToDP(
 ): number;
 
 declare export function listenOrientationChange(
-  screenClassComponent: Component<any, any>
+  orientationHookDispatch: Dispatch<any>
 ): void;
 
 declare export function removeOrientationListener(): void;
