@@ -53,9 +53,7 @@ const listenOrientationChange = that => {
     screenHeight = newDimensions.window.height;
 
     // Trigger screen's rerender with a state update of the orientation variable
-    that.setState({
-      orientation: screenWidth < screenHeight ? 'portrait' : 'landscape'
-    });
+    that(screenWidth < screenHeight ? 'portrait' : 'landscape');
   });
 };
 
